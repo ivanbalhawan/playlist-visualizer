@@ -13,10 +13,14 @@ dependencies = [
     "requests>=2.31.0",
     "python-dotenv>=1.0.0",
     "ipython>=8.17.2",
+    "scikit-learn>=1.3.2",
 ]
 requires-python = ">=3.11"
 readme = "README.md"
 license = {text = "MIT"}
+
+[tool.pdm.scripts]
+start.cmd = "python src/visualize_playlist.py"
 
 [tool.pdm.dev-dependencies]
 dev = [
